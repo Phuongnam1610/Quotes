@@ -13,6 +13,8 @@
 - Chia sẻ với các nền tảng khác: Tải ảnh về, Chia sẻ lên facebook...
 ## ScreenShot
 ![2](https://github.com/user-attachments/assets/fda50757-f5a7-415a-a1fb-eeac7d0afae0)
+<img src="https://github.com/user-attachments/assets/fda50757-f5a7-415a-a1fb-eeac7d0afae0" alt="Mo ta anh" width="300"/>
+
 
 
 ## Sử Dụng
