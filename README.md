@@ -1,12 +1,16 @@
 # Quotes App
 
 Ứng dụng mạng xã hội chia sẻ và thảo luận về Quotes
+<img width="115" alt="image" src="https://github.com/user-attachments/assets/d3d519db-a7e6-4ba7-ad00-2f508493f469">
+
 
 ## Built With 🛠
 - MVP
 - Kotlin
-- Firebase Firestore, Firebase Storage, Firebase Authentication, Firebase Cloud Message
-- <img width="794" alt="image" src="https://github.com/user-attachments/assets/bea28c60-8f46-433d-80e2-be51f70b6b03">
+- Firebase Authentication, Firebase Cloud Message
+Firebase Firestore
+<img width="794" alt="image" src="https://github.com/user-attachments/assets/bea28c60-8f46-433d-80e2-be51f70b6b03">
+Firebase Storage
 <img width="831" alt="image" src="https://github.com/user-attachments/assets/2a91abe0-8b5f-48fd-82f8-5070cab97c76">
 
 ## Tính Năng chính
