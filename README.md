@@ -6,6 +6,9 @@
 - MVP
 - Kotlin
 - Firebase Firestore, Firebase Storage, Firebase Authentication, Firebase Cloud Message
+- <img width="794" alt="image" src="https://github.com/user-attachments/assets/bea28c60-8f46-433d-80e2-be51f70b6b03">
+<img width="831" alt="image" src="https://github.com/user-attachments/assets/2a91abe0-8b5f-48fd-82f8-5070cab97c76">
+
 ## Tính Năng chính
 - Tạo quotes
 - Tìm kiếm quotes
