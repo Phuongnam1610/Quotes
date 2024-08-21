@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:launchMode="singleInstance"
+        android:id="@+id/homeFragment"
+        android:name="com.example.quotes.fragments.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_notifFragment"
+            app:destination="@id/notifFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_userFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+             />
+        <action
+            android:id="@+id/action_homeFragment_to_plusFragment"
+            app:restoreState="true"
+        app:popUpToSaveState="true"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+       />
+        <action
+            app:popUpToSaveState="true"
+            app:restoreState="true"
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_bottomCommentFragment"
+            app:destination="@id/bottomCommentFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_bottomSettingFragment"
+            app:destination="@id/bottomSettingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_showUserActivity"
+            app:destination="@id/showUserActivity" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/notifFragment"
+        android:name="com.example.quotes.fragments.notif.NotifFragment"
+        android:label="fragment_notif"
+        tools:layout="@layout/fragment_notif" >
+        <action
+            android:id="@+id/action_notifFragment_to_showActivity"
+            app:destination="@id/showActivity" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.quotes.fragments.search.SearchFragment"
+        android:label="SearchFragment">
+        <action
+            android:id="@+id/action_searchFragment_to_showActivity"
+            app:destination="@id/showActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.quotes.activities.login.LoginActivity"
+        android:label="LoginActivity" />
+    <dialog
+        android:id="@+id/bottomCommentFragment"
+        android:name="com.example.quotes.fragments.bottomcomment.BottomCmtSetFragment"
+        android:label="BottomCommentFragment" />
+    <dialog
+        android:id="@+id/bottomSettingFragment"
+        android:name="com.example.quotes.fragments.bottomcomment.BottomSettingFragment"
+        android:label="BottomSettingFragment" >
+
+    </dialog>
+    <activity
+        android:id="@+id/upPostActivity"
+        android:name="com.example.quotes.activities.uppost.UpPostActivity"
+        android:label="UpPostActivity" />
+    <activity
+        android:id="@+id/showActivity"
+        android:name="com.example.quotes.activities.show.ShowActivity"
+        android:label="ShowActivity" />
+    <activity
+        android:id="@+id/showUserActivity"
+        android:name="com.example.quotes.activities.showuser.ShowUserActivity"
+        android:label="showUserActivity" />
+</navigation>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bggradient"
+>
+    <ImageView
+        android:id="@+id/imgquotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/girl"
+        />
+    <RelativeLayout
+        android:padding="@dimen/_10sdp"
+
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:minHeight="@dimen/_60sdp"
+        android:minWidth="@dimen/_70sdp"
+        android:clickable="true"
+        android:background="@drawable/bg_quotes"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_alignParentTop="true"
+            android:id="@+id/edtquotes"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            style="@style/tvquotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="Quotes"
+ />
+
+        <EditText
+            android:layout_below="@+id/edtquotes"
+            android:maxWidth="@dimen/_200sdp"
+            android:id="@+id/edtauthor"
+            style="@style/tvquotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="Tác giả"
+            android:minWidth="@dimen/_50sdp"
+/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                style="@style/tvmain2"
+
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="Chủ đề"/>
+
+            <Spinner
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/spinner"
+                android:background="@color/red"
+                style="@style/tvspinner"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_25sdp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvchiase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                style="@style/tvmain2"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:text="Chia sẻ"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnpost"
+                android:layout_gravity="end|center"
+                style="@style/button"
+                app:icon="@drawable/up"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

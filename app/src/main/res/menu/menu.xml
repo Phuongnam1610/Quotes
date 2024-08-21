@@ -1,0 +1,20 @@
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_home"
+        android:icon="@drawable/home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/tab_plus"
+        android:icon="@drawable/plus"
+        android:title="@string/plus" />
+    <item
+        android:id="@+id/tab_notif"
+        android:icon="@drawable/notif"
+        android:title="@string/notif" />
+    <item
+        android:id="@+id/tab_user"
+        android:icon="@drawable/user"
+        android:title="@string/user" />
+</menu>

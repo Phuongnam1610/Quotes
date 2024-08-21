@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bggradient2"
+    android:layout_height="wrap_content"
+
+    android:padding="@dimen/_30sdp">
+    <LinearLayout
+        android:id="@+id/layoutadmin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvedit"
+
+            android:text="Chỉnh sửa quotes"
+            style="@style/tvmain3"
+            android:textSize="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginVertical="@dimen/_8sdp"/>
+
+        <TextView
+            android:id="@+id/tvdelete"
+
+            android:text="Xóa quotes"
+            style="@style/tvmain3"
+            android:textSize="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginVertical="@dimen/_8sdp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvreport"
+        android:text="Báo cáo quotes"
+        style="@style/tvmain3"
+        android:textSize="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

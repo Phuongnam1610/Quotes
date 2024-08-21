@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bggradient2"
+    tools:context=".activities.register.RegisterActivity">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:visibility="visible"
+        android:layout_gravity="center"
+
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bgheart"
+            />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/loutmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            app:cardCornerRadius="@dimen/_30sdp"
+            app:cardElevation="@dimen/_15sdp"
+            >
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/loutregister"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_15sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/tvmain3"
+                    android:id="@+id/tvdangky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đăng ký"
+                    />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imavatar"
+                    android:layout_gravity="center"
+                    android:src="@drawable/avatar"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/edtusername"
+                    style="@style/edtstyle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tên người dùng"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/edtemail"
+                    style="@style/edtstyle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/edtpassword"
+                    style="@style/edtstyle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mật khẩu"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/edtlinkFB"
+                    style="@style/edtstyle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Link FaceBook (Không bắt buộc)"
+                    />
+
+                <Button
+
+                    android:id="@+id/btnregister"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đăng ký"
+                    android:textSize="@dimen/_15sdp"
+                    android:fontFamily="@font/htl"
+                    android:backgroundTint="@color/red"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/loutupdate"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_15sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/tvmain3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cập nhật"
+                    />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imavatarU"
+                    android:layout_gravity="center"
+                    android:src="@drawable/avatar"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+
+                    />
+
+                <TextView
+
+                    style="@style/tvmain3"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên người dùng"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_gravity="start"
+
+                    />
+                <EditText
+                    android:id="@+id/edtusernameU"
+                    style="@style/edtstyle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:inputType="text" />
+
+                <TextView
+
+                    style="@style/tvmain3"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Link Facebook"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_gravity="start"
+
+                    />
+                <EditText
+                    android:id="@+id/edtlinkFBU"
+                    style="@style/edtstyle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:inputType="text" />
+                <TextView
+                    android:id="@+id/tvresetpass"
+                    style="@style/tvmain3"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đổi mật khẩu"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_gravity="start"
+
+                    />
+                <Button
+
+                    android:id="@+id/btnupdate"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cập nhật"
+                    android:textSize="@dimen/_15sdp"
+                    android:fontFamily="@font/htl"
+                    android:backgroundTint="@color/red"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerQuotes"
+    android:layout_width="match_parent"
+    android:background="@drawable/bggradient2"
+
+    android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading2" />
+    <FrameLayout
+        android:id="@+id/layoutmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgquotes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+        <RelativeLayout
+            android:padding="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/bg_quotes"
+            android:clickable="true"
+            android:minWidth="@dimen/_70sdp"
+            android:minHeight="@dimen/_60sdp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tvquotes"
+                style="@style/tvquotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="top"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Quotes" />
+
+            <TextView
+                android:id="@+id/tvauthor"
+                style="@style/tvquotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvquotes"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom"
+                android:background="@null"
+                android:gravity="end"
+                android:hint="Tác giả"
+                android:maxWidth="@dimen/_200sdp"
+                android:minWidth="@dimen/_50sdp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imguser"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                />
+            <ImageView
+                android:layout_gravity="center"
+
+                android:id="@+id/btnheart"
+                android:layout_width="@dimen/_30sdp"
+                android:src="@drawable/unlike"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:text="Heart"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/_20sdp"
+                android:layout_gravity="center"
+
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="@color/main"
+                style="@style/tvmain3"
+                android:id="@+id/tvcountheart"/>
+
+            <ImageView
+                android:id="@+id/btncomment"
+                android:src="@drawable/comment"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_gravity="center"
+
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                android:adjustViewBounds="true"
+                android:text="Comment"/>
+            <ImageView
+                android:id="@+id/btnshare"
+                android:src="@drawable/share"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_gravity="center"
+
+                />
+            <ImageView
+                android:id="@+id/btnsetting"
+                android:src="@drawable/setting"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_gravity="center"
+
+                android:adjustViewBounds="true"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</FrameLayout>

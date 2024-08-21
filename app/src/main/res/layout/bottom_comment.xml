@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300sdp"
+    android:background="@drawable/bggradient2"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhận xét"
+        android:layout_alignParentTop="true"
+        style="@style/tvmain3"
+        android:textSize="@dimen/_15sdp"
+        android:id="@+id/tvnhanxet"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvcomment"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/tvnhanxet"
+        />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:id="@+id/edtcomment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/edtstyle"
+            android:padding="@dimen/_10sdp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:hint="Nhập từ khóa"
+     />
+
+        <com.google.android.material.button.MaterialButton
+        android:id="@+id/btncomment"
+        style="@style/button"
+
+        app:icon="@drawable/send"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

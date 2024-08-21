@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bggradient2"
+    android:layout_height="wrap_content"
+
+    android:padding="@dimen/_30sdp">
+
+    <LinearLayout
+        android:id="@+id/layoutadmin"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvedit"
+
+            style="@style/tvmain3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chỉnh sửa comment"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_15sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:background="@color/main" />
+
+        <TextView
+            android:id="@+id/tvdelete"
+
+            style="@style/tvmain3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xóa comment"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

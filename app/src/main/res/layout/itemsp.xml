@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainThi">
+
+    <ImageView
+        android:id="@+id/imgminhhoa"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/mahang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Mã hàng" />
+
+    <TextView
+        android:id="@+id/tenhang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tên hàng" />
+
+    <TextView
+        android:id="@+id/mota"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Mô tả" />
+
+    <TextView
+        android:id="@+id/soluong"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Số lượng" />
+
+    <TextView
+        android:id="@+id/giahang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Giá hàng" />
+
+    <TextView
+        android:id="@+id/ghichu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Ghi chú" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/black"
+        android:layout_marginVertical="@dimen/_8sdp"/>
+</LinearLayout>
