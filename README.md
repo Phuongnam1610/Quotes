@@ -1,7 +1,6 @@
 # Quotes App
-
-Ứng dụng mạng xã hội chia sẻ và thảo luận về Quotes
 <img width="115" alt="image" src="https://github.com/user-attachments/assets/d3d519db-a7e6-4ba7-ad00-2f508493f469">
+Ứng dụng mạng xã hội chia sẻ và thảo luận về Quotes
 
 
 ## Built With 🛠
