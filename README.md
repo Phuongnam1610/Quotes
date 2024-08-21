@@ -12,7 +12,7 @@
 - Tương tác với quotes: Like, Comments, Tố cáo
 - Chia sẻ với các nền tảng khác: Tải ảnh về, Chia sẻ lên facebook...
 ## ScreenShot
-     ![Mô tả ảnh](screenshot/1.png)
+![2](https://github.com/user-attachments/assets/fda50757-f5a7-415a-a1fb-eeac7d0afae0)
 
 
 ## Sử Dụng
