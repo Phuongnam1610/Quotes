@@ -32,6 +32,7 @@
   <li>- Tìm kiếm quotes</li>
   <li>- Tương tác với quotes: Like, Comments, Tố cáo</li>
   <li>- Chia sẻ với các nền tảng khác: Tải ảnh về, Chia sẻ lên facebook...</li>
+  <li>- Giữ vào comment mình viết để chỉnh sửa</li>
 </ul>
 
 <h2>ScreenShot</h2>
