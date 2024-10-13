@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="match_parent"
         app:labelVisibilityMode="unlabeled"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_height="@dimen/_70sdp"
         app:itemIconTint="@drawable/bottom_nav_colors"
         app:itemActiveIndicatorStyle="@style/Theme.BottomNavigationView.ActiveIndicator"
 
